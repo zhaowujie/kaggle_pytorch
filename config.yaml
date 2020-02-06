@@ -1,0 +1,28 @@
+Train:
+  batch_size: 32
+  lr: 0.001
+  weight_decay: 0.1
+  momentum: 0.9
+  optimizer_type: "SGD"
+  nepochs: 5
+  steps: [20000, 40000, 60000]
+  lr_decay: 0.1
+Test:
+  batch_size: 16
+  show_img: True
+
+
+backbone: "resnet18"
+Num_Classes: 2
+Pretrained: True
+cuda: True
+num_workers: 4
+shuffle: True
+drop_last: False
+img_aug: True
+mean: [0.382, 0.356, 0.326]
+std: [0.305, 0.291, 0.283]
+
+train_root: "E://DeepLearning//kaggle//train"
+test_root: "E://DeepLearning//kaggle//test"
+
